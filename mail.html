@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">R</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">U</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">D</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div class="container-fluid">
+        <div class="row" style="height: 90vh;">
+            <div class="col-2" style="height: 90vh; overflow: auto;">
+                <div class="row" style="height: 120px; padding: 0;">
+                    <div class="row" style="height: 60px; box-sizing: border-box; padding: 5px;">
+                        <div class="col-6">
+                            <form method="get" action="/mailWriteAction">
+                                <input type="submit" name="toOther" value="메일 쓰기" style="background-color: green;">
+                            </form>
+                        </div>
+                        <div class="col-6">
+                            <form method="get" action="/mailWriteAction">
+                                <input type="submit" name="toMe" value="나에게 쓰기" style="background-color: green;">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 60px; padding: 0;">
+                        <div class="col-3" style="background-color: #000;"></div>
+                        <div class="col-3" style="background-color: #ddd;"></div>
+                        <div class="col-3" style="background-color: #fff;"></div>
+                        <div class="col-3" style="background-color: #282828;"></div>
+                    </div>
+                </div>
+                <div class="row" style="height: 155px; padding: 5px 0 0 0;">
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="전체메일" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="받은메일함" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="보낸메일함" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="임시보관함" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="내게쓴메일함" style="width: 224.8px;">
+                    </form>
+                </div>
+                <div class="row" style="height: 35px; padding: 5px 0 0 0;">
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="스마트메일함" style="width: 224.8px;">
+                    </form>
+                </div>
+                <div class="row" style="height: 65px; padding: 5px 0 0 0;">
+                    <div class="row" style="height: 30px;"></div>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="새메일함" style="width: 224.8px;">
+                    </form>
+                </div>
+                <div class="row" style="height: 65px; padding: 5px 0 0 0;">
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="스팸메일함" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="휴지통" style="width: 224.8px;">
+                    </form>
+                </div>
+                <div class="row" style="height: 125px; padding: 5px 0 0 0;">
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="환경설정" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="고객센터" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="메일용량" style="width: 224.8px;">
+                    </form>
+                    <form method="get" action="" style="padding: 0;">
+                        <input type="submit" value="공지사항" style="width: 224.8px;">
+                    </form>
+                </div>
+                <div class="row" style="height: 100px; padding: 0;"></div>
+            </div>
+            <div class="col-10" style="height: 90vh; overflow: auto; background-color: #282828;">
+                <table class="table table-striped" style="text-align: center; border: 1px solid #dddddd;">
+                    <thead>
+                        <tr>
+                            <th style="background-color: #eeeeee; text-align: center;">보낸이</th>
+                            <th style="background-color: #eeeeee; text-align: center;">제목</th>
+                            <th style="background-color: #eeeeee; text-align: center;">보낸날짜</th>
+                        </tr>			
+                    </thead>
+                    <tbody id="ajaxTable">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> 
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

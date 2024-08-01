@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        .navbar{ padding: 0px; }
+        .search{ color: grey; }
+        .title {
+            font-weight: bold;
+        }
+        .left, .right{
+            box-sizing: border-box;
+            padding: 40px 20px 20px;
+            background-color: #282828;
+        }
+        .col-3{
+            background-color: #282828;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">C</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">R</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">U</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">D</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row" style="height: 80px; box-sizing: border-box; padding: 5px 0;"> <!--회색-->
+        <div class="col-3"></div>
+        <div class="col-6" style="background-color: #ddd;">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                style="height: 70px;">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" style="height: 80px;"> <!--흰색-->
+        <div class="col-3"></div>
+        <div class="col-6" style="background-color: #ddd;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="display: flex; justify-content: space-around">
+                <a class="nav-link" href="#">H</a>
+                <a class="nav-link" href="#">E</a>
+                <a class="nav-link" href="#">L</a>
+                <a class="nav-link" href="#">L</a>
+                <a class="nav-link" href="#">O</a>
+                <a class="nav-link" href="#">W</a>
+                <a class="nav-link" href="#">O</a>
+                <a class="nav-link" href="#">R</a>
+                <a class="nav-link" href="#">L</a>
+                <a class="nav-link" href="#">D</a>
+            </nav>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" style="height: 140px;"> <!--검은색-->
+        <div class="col-3"></div>
+        <div class="col-6" style="background-color: #000;"></div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" style="height: 480px; background-color: #eee;"> <!--연한 회색-->
+        <div class="col-8"></div>
+        <div class="col-4">
+            <div class="row" style="height: 210px; background-color: #fff;">
+                <div class="row"><p>C R U D 를 더 편리하고 안전하게 사용하세요</p></div>
+                <div class="row">
+                    <div style="background-color: #000; text-align: center;">
+                        <a href="#"><p style="color: #ddd;">C R U D 로그인</p></a>
+                    </div>
+                </div>
+                <div class="row"><a href="#">아이디찾기</a><a href="#">비밀번호찾기</a><a href="#">회원가입</a></div>
+            </div> <!--흰색-->
+            <div class="row" style="height: 270px; background-color: #ddd;"></div> <!--회색-->
+        </div>
+    </div>
+</div>
+
+
+<footer style="background-color: #282828;">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 left">
+                <p style="color: #ddd">
+                    회사이름 : 윈도우<br>
+                    주소    : 울산 중구 성남동 리버플레이스 8층<br>
+                    ... <br>
+                </p>
+            </div>
+            <div class="col-4 right">
+                <p style="color: #ddd">
+                    사이트맵<br>
+                    오시는길<br>
+                    제휴사<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
